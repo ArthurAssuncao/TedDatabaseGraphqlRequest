@@ -1,0 +1,1 @@
+# TED Database Graphql Request

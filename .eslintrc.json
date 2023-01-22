@@ -1,0 +1,101 @@
+{
+  "plugins": [
+    "prettier",
+    "@typescript-eslint",
+    "eslint-comments",
+    "jest",
+    "promise",
+    "simple-import-sort"
+  ],
+  "extends": [
+    "standard",
+    "plugin:eslint-comments/recommended",
+    "plugin:jest/recommended",
+    "plugin:promise/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "modules": true
+    },
+    "project": "./tsconfig.json"
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "es2022": true,
+    "jest": true,
+    "commonjs": true
+  },
+  "rules": {
+    "prettier/prettier": "warn",
+    "comma-dangle": "off",
+    "no-underscore-dangle": ["error", { "allow": ["_id"] }],
+    "indent": ["error", 2],
+    "no-spaced-func": 2,
+    "linebreak-style": ["error", "unix"],
+    "curly": ["error"],
+    "no-else-return": ["error"],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "semi": [
+      2,
+      "always",
+      {
+        "omitLastInOneLineBlock": true
+      }
+    ],
+    "no-extra-semi": 2,
+    "no-cond-assign": ["error", "always"],
+    "@typescript-eslint/no-namespace": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "no-prototype-builtins": "off",
+    "import/prefer-default-export": "off",
+    "import/no-default-export": "error",
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      { "allowExpressions": true, "allowTypedFunctionExpressions": true }
+    ],
+    "prefer-const": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".ts",
+          ".tsx",
+          ".test.ts",
+          ".test.tsx",
+          ".js",
+          ".android.js",
+          ".ios.js",
+          ".ts",
+          ".android.ts",
+          ".ios.ts"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,2088 @@
+{
+  "data": {
+    "videos": {
+      "pageInfo": {
+        "endCursor": "4189",
+        "hasNextPage": false
+      },
+      "nodes": [
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/edward_burtynsky_my_wish_manufactured_landscapes_and_green_education",
+          "description": "Accepting his 2005 TED Prize, photographer Edward Burtynsky makes a wish: that his images -- stunning landscapes that document humanity's impact on the world -- help persuade millions to join a global conversation on sustainability.",
+          "duration": 2051,
+          "id": "56",
+          "language": "en",
+          "presenterDisplayName": "Edward Burtynsky",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Photographer",
+                "id": "56",
+                "firstname": "Edward",
+                "lastname": "Burtynsky",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/396_254x191.jpg",
+                "slug": "edward_burtynsky"
+              }
+            ]
+          },
+          "title": "My wish: Manufactured landscapes and green education",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "environment"
+              },
+              {
+                "name": "design"
+              },
+              {
+                "name": "cities"
+              },
+              {
+                "name": "social change"
+              },
+              {
+                "name": "art"
+              },
+              {
+                "name": "photography"
+              },
+              {
+                "name": "pollution"
+              },
+              {
+                "name": "TED Prize"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 1427088
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/ben_saunders_why_did_i_ski_to_the_north_pole",
+          "description": "Arctic explorer Ben Saunders recounts his harrowing solo ski trek to the North Pole, complete with engaging anecdotes, gorgeous photos and never-before-seen video.",
+          "duration": 1069,
+          "id": "89",
+          "language": "en",
+          "presenterDisplayName": "Ben Saunders",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Polar explorer",
+                "id": "87",
+                "firstname": "Ben",
+                "lastname": "Saunders",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/ccee2996dc81f05916a7e18207c8321d1d5a479d_254x191.jpg",
+                "slug": "ben_saunders"
+              }
+            ]
+          },
+          "title": "Why did I ski to the North Pole?",
+          "topics": {
+            "nodes": [
+              {
+                "name": "climate change"
+              },
+              {
+                "name": "culture"
+              },
+              {
+                "name": "global issues"
+              },
+              {
+                "name": "technology"
+              },
+              {
+                "name": "sports"
+              },
+              {
+                "name": "personal growth"
+              },
+              {
+                "name": "potential"
+              },
+              {
+                "name": "exploration"
+              },
+              {
+                "name": "travel"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 1025588
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/burt_rutan_the_real_future_of_space_exploration",
+          "description": "In this passionate talk, legendary spacecraft designer Burt Rutan lambasts the US government-funded space program for stagnating and asks entrepreneurs to pick up where NASA has left off.",
+          "duration": 1157,
+          "id": "4",
+          "language": "en",
+          "presenterDisplayName": "Burt Rutan",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Aircraft engineer",
+                "id": "5",
+                "firstname": "Burt",
+                "lastname": "Rutan",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1439_253x190.jpg",
+                "slug": "burt_rutan"
+              }
+            ]
+          },
+          "title": "The real future of space exploration",
+          "topics": {
+            "nodes": [
+              {
+                "name": "design"
+              },
+              {
+                "name": "engineering"
+              },
+              {
+                "name": "industrial design"
+              },
+              {
+                "name": "invention"
+              },
+              {
+                "name": "business"
+              },
+              {
+                "name": "entrepreneur"
+              },
+              {
+                "name": "flight"
+              },
+              {
+                "name": "rocket science"
+              },
+              {
+                "name": "space"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 2569483
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/sasa_vucinic_why_we_should_invest_in_a_free_press",
+          "description": "A free press -- papers, magazines, radio, TV, blogs -- is the backbone of any true democracy (and a vital watchdog on business). Sasa Vucinic, a journalist from Belgrade, talks about his new fund, which supports media by selling \"free press bonds.\"",
+          "duration": 1066,
+          "id": "75",
+          "language": "en",
+          "presenterDisplayName": "Sasa Vucinic",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Nonprofit venture capitalist",
+                "id": "75",
+                "firstname": "Sasa",
+                "lastname": "Vucinic",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1310_253x190.jpg",
+                "slug": "sasa_vucinic"
+              }
+            ]
+          },
+          "title": "Why we should invest in a free press",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "global issues"
+              },
+              {
+                "name": "business"
+              },
+              {
+                "name": "media"
+              },
+              {
+                "name": "philanthropy"
+              },
+              {
+                "name": "investing"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 691920
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/ashraf_ghani_how_to_rebuild_a_broken_state",
+          "description": "Ashraf Ghani's passionate and powerful 10-minute talk, emphasizing the necessity of both economic investment and design ingenuity to rebuild broken states, is followed by a conversation with TED curator Chris Anderson on the future of Afghanistan.",
+          "duration": 1105,
+          "id": "3",
+          "language": "en",
+          "presenterDisplayName": "Ashraf Ghani",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "President of Afghanistan",
+                "id": "4",
+                "firstname": "Ashraf",
+                "lastname": "Ghani",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/c9aa84f30b79de8ac85323fbd558e7750ef2310d_254x191.jpg",
+                "slug": "ashraf_ghani"
+              }
+            ]
+          },
+          "title": "How to rebuild a broken state",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "global issues"
+              },
+              {
+                "name": "politics"
+              },
+              {
+                "name": "business"
+              },
+              {
+                "name": "corruption"
+              },
+              {
+                "name": "economics"
+              },
+              {
+                "name": "entrepreneur"
+              },
+              {
+                "name": "military"
+              },
+              {
+                "name": "poverty"
+              },
+              {
+                "name": "policy"
+              },
+              {
+                "name": "international development"
+              },
+              {
+                "name": "investing"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 1104552
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/jacqueline_novogratz_invest_in_africa_s_own_solutions",
+          "description": "Jacqueline Novogratz applauds the world's heightened interest in Africa and poverty, but argues persuasively for a new approach.",
+          "duration": 758,
+          "id": "91",
+          "language": "en",
+          "presenterDisplayName": "Jacqueline Novogratz",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Founder and CEO of Acumen",
+                "id": "89",
+                "firstname": "Jacqueline",
+                "lastname": "Novogratz",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/5cb81ef1877acdcccdf2ebc36bdbc58ede7e433a_254x191.jpg",
+                "slug": "jacqueline_novogratz"
+              }
+            ]
+          },
+          "title": "Invest in Africa's own solutions",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "business"
+              },
+              {
+                "name": "entrepreneur"
+              },
+              {
+                "name": "philanthropy"
+              },
+              {
+                "name": "poverty"
+              },
+              {
+                "name": "finance"
+              },
+              {
+                "name": "international development"
+              },
+              {
+                "name": "investing"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 1138020
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/iqbal_quadir_how_mobile_phones_can_fight_poverty",
+          "description": "Iqbal Quadir tells how his experiences as a kid in poor Bangladesh, and later as a banker in New York, led him to start a mobile phone operator connecting 80 million rural Bangladeshi -- and to become a champion of bottom-up development.",
+          "duration": 938,
+          "id": "79",
+          "language": "en",
+          "presenterDisplayName": "Iqbal Quadir",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Founder, GrameenPhone",
+                "id": "79",
+                "firstname": "Iqbal",
+                "lastname": "Quadir",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1311_253x190.jpg",
+                "slug": "iqbal_quadir"
+              }
+            ]
+          },
+          "title": "How mobile phones can fight poverty",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "global issues"
+              },
+              {
+                "name": "technology"
+              },
+              {
+                "name": "invention"
+              },
+              {
+                "name": "business"
+              },
+              {
+                "name": "transportation"
+              },
+              {
+                "name": "communication"
+              },
+              {
+                "name": "poverty"
+              },
+              {
+                "name": "finance"
+              },
+              {
+                "name": "renewable energy"
+              },
+              {
+                "name": "international development"
+              },
+              {
+                "name": "investing"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 633785
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/aubrey_de_grey_a_roadmap_to_end_aging",
+          "description": "Cambridge researcher Aubrey de Grey argues that aging is merely a disease -- and a curable one at that. Humans age in seven basic ways, he says, all of which can be averted.",
+          "duration": 1354,
+          "id": "39",
+          "language": "en",
+          "presenterDisplayName": "Aubrey de Grey",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Crusader against aging",
+                "id": "34",
+                "firstname": "Aubrey",
+                "lastname": "de Grey",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/16458d0f5725d3a196b41a965991a673c1a16729_254x191.jpg",
+                "slug": "aubrey_de_grey"
+              }
+            ]
+          },
+          "title": "A roadmap to end aging",
+          "topics": {
+            "nodes": [
+              {
+                "name": "science"
+              },
+              {
+                "name": "technology"
+              },
+              {
+                "name": "engineering"
+              },
+              {
+                "name": "biotech"
+              },
+              {
+                "name": "disease"
+              },
+              {
+                "name": "health care"
+              },
+              {
+                "name": "future"
+              },
+              {
+                "name": "aging"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 4672309
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/eva_vertes_meet_the_future_of_cancer_research",
+          "description": "Eva Vertes -- only 19 when she gave this talk -- discusses her journey toward studying medicine and her drive to understand the roots of cancer and Alzheimer’s.",
+          "duration": 1115,
+          "id": "12",
+          "language": "en",
+          "presenterDisplayName": "Eva Vertes",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Neuroscience and cancer researcher",
+                "id": "13",
+                "firstname": "Eva",
+                "lastname": "Vertes",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/857138c8562f97307725a26167a0c2687d92e5c3_254x191.jpg",
+                "slug": "eva_vertes"
+              }
+            ]
+          },
+          "title": "Meet the future of cancer research",
+          "topics": {
+            "nodes": [
+              {
+                "name": "science"
+              },
+              {
+                "name": "technology"
+              },
+              {
+                "name": "disease"
+              },
+              {
+                "name": "health"
+              },
+              {
+                "name": "cancer"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 1183328
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/dan_gilbert_the_surprising_science_of_happiness",
+          "description": "Dan Gilbert, author of \"Stumbling on Happiness,\" challenges the idea that we'll be miserable if we don't get what we want. Our \"psychological immune system\" lets us feel truly happy even when things don't go as planned.",
+          "duration": 1251,
+          "id": "97",
+          "language": "en",
+          "presenterDisplayName": "Dan Gilbert",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Psychologist; happiness expert",
+                "id": "94",
+                "firstname": "Dan",
+                "lastname": "Gilbert",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1990_254x191.jpg",
+                "slug": "dan_gilbert"
+              }
+            ]
+          },
+          "title": "The surprising science of happiness",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "science"
+              },
+              {
+                "name": "evolution"
+              },
+              {
+                "name": "psychology"
+              },
+              {
+                "name": "happiness"
+              },
+              {
+                "name": "brain"
+              },
+              {
+                "name": "decision-making"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 20308737
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/barry_schwartz_the_paradox_of_choice",
+          "description": "Psychologist Barry Schwartz takes aim at a central tenet of western societies: freedom of choice. In Schwartz's estimation, choice has made us not freer but more paralyzed, not happier but more dissatisfied.",
+          "duration": 1163,
+          "id": "93",
+          "language": "en",
+          "presenterDisplayName": "Barry Schwartz",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Psychology professor",
+                "id": "91",
+                "firstname": "Barry",
+                "lastname": "Schwartz",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/ac3627e883faae0e4781eef6c0ead1fac1a9cb03_254x191.jpg",
+                "slug": "barry_schwartz"
+              }
+            ]
+          },
+          "title": "The paradox of choice",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "business"
+              },
+              {
+                "name": "economics"
+              },
+              {
+                "name": "psychology"
+              },
+              {
+                "name": "happiness"
+              },
+              {
+                "name": "personal growth"
+              },
+              {
+                "name": "potential"
+              },
+              {
+                "name": "decision-making"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 17395495
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/steven_levitt_the_freakonomics_of_crack_dealing",
+          "description": "\"Freakonomics\" author Steven Levitt presents new data on the finances of drug dealing. Contrary to popular myth, he says, being a street-corner crack dealer isn't lucrative: It pays below minimum wage. And your boss can kill you.",
+          "duration": 1261,
+          "id": "29",
+          "language": "en",
+          "presenterDisplayName": "Steven Levitt",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Economist",
+                "id": "30",
+                "firstname": "Steven",
+                "lastname": "Levitt",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1407_254x191.jpg",
+                "slug": "steven_levitt"
+              }
+            ]
+          },
+          "title": "The freakonomics of crack dealing",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "business"
+              },
+              {
+                "name": "economics"
+              },
+              {
+                "name": "cities"
+              },
+              {
+                "name": "race"
+              },
+              {
+                "name": "drugs"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 4266776
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/malcolm_gladwell_choice_happiness_and_spaghetti_sauce",
+          "description": "\"Tipping Point\" author Malcolm Gladwell gets inside the food industry's pursuit of the perfect spaghetti sauce -- and makes a larger argument about the nature of choice and happiness.",
+          "duration": 1036,
+          "id": "20",
+          "language": "en",
+          "presenterDisplayName": "Malcolm Gladwell",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Writer",
+                "id": "21",
+                "firstname": "Malcolm",
+                "lastname": "Gladwell",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1e7d7849a7ac163d525fbe888a7cb71fcf9c6fe0_254x191.jpg",
+                "slug": "malcolm_gladwell"
+              }
+            ]
+          },
+          "title": "Choice, happiness and spaghetti sauce",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "business"
+              },
+              {
+                "name": "economics"
+              },
+              {
+                "name": "media"
+              },
+              {
+                "name": "food"
+              },
+              {
+                "name": "consumerism"
+              },
+              {
+                "name": "marketing"
+              },
+              {
+                "name": "storytelling"
+              },
+              {
+                "name": "decision-making"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 9407044
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/richard_dawkins_why_the_universe_seems_so_strange",
+          "description": "Biologist Richard Dawkins makes a case for \"thinking the improbable\" by looking at how the human frame of reference limits our understanding of the universe.",
+          "duration": 1302,
+          "id": "98",
+          "language": "en",
+          "presenterDisplayName": "Richard Dawkins",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Evolutionary biologist",
+                "id": "93",
+                "firstname": "Richard",
+                "lastname": "Dawkins",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1477_254x191.jpg",
+                "slug": "richard_dawkins"
+              }
+            ]
+          },
+          "title": "Why the universe seems so strange",
+          "topics": {
+            "nodes": [
+              {
+                "name": "science"
+              },
+              {
+                "name": "cognitive science"
+              },
+              {
+                "name": "evolution"
+              },
+              {
+                "name": "psychology"
+              },
+              {
+                "name": "biology"
+              },
+              {
+                "name": "astronomy"
+              },
+              {
+                "name": "universe"
+              },
+              {
+                "name": "physics"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 4224461
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/david_deutsch_chemical_scum_that_dream_of_distant_quasars",
+          "description": "Legendary scientist David Deutsch puts theoretical physics on the back burner to discuss a more urgent matter: the survival of our species. The first step toward solving global warming, he says, is to admit that we have a problem.",
+          "duration": 1126,
+          "id": "47",
+          "language": "en",
+          "presenterDisplayName": "David Deutsch",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Physicist, author",
+                "id": "48",
+                "firstname": "David",
+                "lastname": "Deutsch",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/b5bd878df6cbd99d226018b2653636f66824e499_254x191.jpg",
+                "slug": "david_deutsch"
+              }
+            ]
+          },
+          "title": "Chemical scum that dream of distant quasars",
+          "topics": {
+            "nodes": [
+              {
+                "name": "climate change"
+              },
+              {
+                "name": "culture"
+              },
+              {
+                "name": "environment"
+              },
+              {
+                "name": "global issues"
+              },
+              {
+                "name": "science"
+              },
+              {
+                "name": "technology"
+              },
+              {
+                "name": "universe"
+              },
+              {
+                "name": "physics"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 2709073
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/eve_ensler_happiness_in_body_and_soul",
+          "description": "Eve Ensler, creator of \"The Vagina Monologues,\" shares how a discussion about menopause with her friends led to talking about all sorts of sexual acts onstage, waging a global campaign to end violence toward women and finding her own happiness.",
+          "duration": 1212,
+          "id": "64",
+          "language": "en",
+          "presenterDisplayName": "Eve Ensler",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Playwright, activist",
+                "id": "66",
+                "firstname": "Eve",
+                "lastname": "Ensler",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/92637df5bef7ff965a873d7612f65700f73e1861_254x191.jpg",
+                "slug": "eve_ensler"
+              }
+            ]
+          },
+          "title": "Happiness in body and soul",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "global issues"
+              },
+              {
+                "name": "entertainment"
+              },
+              {
+                "name": "performance"
+              },
+              {
+                "name": "gender"
+              },
+              {
+                "name": "storytelling"
+              },
+              {
+                "name": "happiness"
+              },
+              {
+                "name": "theater"
+              },
+              {
+                "name": "women"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 1413356
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/helen_fisher_why_we_love_why_we_cheat",
+          "description": "Anthropologist Helen Fisher takes on a tricky topic – love – and explains its evolution, its biochemical foundations and its social importance. She closes with a warning about the potential disaster inherent in antidepressant abuse.",
+          "duration": 1394,
+          "id": "16",
+          "language": "en",
+          "presenterDisplayName": "Helen Fisher",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Anthropologist, expert on love",
+                "id": "17",
+                "firstname": "Helen",
+                "lastname": "Fisher",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/a390d3e37a2f9f68f9a2f4f664e66bc694d7a699_254x191.jpg",
+                "slug": "helen_fisher"
+              }
+            ]
+          },
+          "title": "Why we love, why we cheat",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "science"
+              },
+              {
+                "name": "cognitive science"
+              },
+              {
+                "name": "evolution"
+              },
+              {
+                "name": "gender"
+              },
+              {
+                "name": "love"
+              },
+              {
+                "name": "psychology"
+              },
+              {
+                "name": "relationships"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 12265868
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/ze_frank_nerdcore_comedy",
+          "description": "Performer and web toymaker Ze Frank delivers a hilarious nerdcore standup routine, then tells us what he's seriously passionate about: helping people create and interact using simple, addictive web tools.",
+          "duration": 1123,
+          "id": "87",
+          "language": "en",
+          "presenterDisplayName": "Ze Frank",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Web humorist",
+                "id": "86",
+                "firstname": "Ze",
+                "lastname": "Frank",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/3097a66d82f8a284f43f835770f610e8c730c16c_254x191.jpg",
+                "slug": "ze_frank"
+              }
+            ]
+          },
+          "title": "Nerdcore comedy",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "entertainment"
+              },
+              {
+                "name": "performance"
+              },
+              {
+                "name": "software"
+              },
+              {
+                "name": "collaboration"
+              },
+              {
+                "name": "community"
+              },
+              {
+                "name": "dance"
+              },
+              {
+                "name": "demo"
+              },
+              {
+                "name": "comedy"
+              },
+              {
+                "name": "humor"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 7399525
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/mena_trott_meet_the_founder_of_the_blog_revolution",
+          "description": "The founding mother of the blog revolution, Movable Type's Mena Trott, talks about the early days of blogging, when she realized that giving regular people the power to share our lives online is the key to building a friendlier, more connected world.",
+          "duration": 992,
+          "id": "21",
+          "language": "en",
+          "presenterDisplayName": "Mena Trott",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Blogger; cofounder, Six Apart",
+                "id": "22",
+                "firstname": "Mena",
+                "lastname": "Trott",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1421_253x190.jpg",
+                "slug": "mena_trott"
+              }
+            ]
+          },
+          "title": "Meet the founder of the blog revolution",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "design"
+              },
+              {
+                "name": "business"
+              },
+              {
+                "name": "entertainment"
+              },
+              {
+                "name": "software"
+              },
+              {
+                "name": "storytelling"
+              },
+              {
+                "name": "communication"
+              },
+              {
+                "name": "community"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 591754
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/jimmy_wales_the_birth_of_wikipedia",
+          "description": "Jimmy Wales recalls how he assembled \"a ragtag band of volunteers,\" gave them tools for collaborating and created Wikipedia, the self-organizing, self-correcting, never-finished online encyclopedia.",
+          "duration": 1188,
+          "id": "37",
+          "language": "en",
+          "presenterDisplayName": "Jimmy Wales",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Founder of Wikipedia",
+                "id": "37",
+                "firstname": "Jimmy",
+                "lastname": "Wales",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1332_253x190.jpg",
+                "slug": "jimmy_wales"
+              }
+            ]
+          },
+          "title": "The birth of Wikipedia",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "technology"
+              },
+              {
+                "name": "invention"
+              },
+              {
+                "name": "business"
+              },
+              {
+                "name": "media"
+              },
+              {
+                "name": "software"
+              },
+              {
+                "name": "collaboration"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 1469907
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/richard_baraniuk_the_birth_of_the_open_source_learning_revolution",
+          "description": "In 2006, open-learning visionary Richard Baraniuk explains the vision behind Connexions (now called OpenStax), an open-source, online education system. It cuts out the textbook, allowing teachers to share and modify course materials freely, anywhere in the world.",
+          "duration": 1100,
+          "id": "25",
+          "language": "en",
+          "presenterDisplayName": "Richard Baraniuk",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Education visionary",
+                "id": "26",
+                "firstname": "Richard",
+                "lastname": "Baraniuk",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1414_254x191.jpg",
+                "slug": "richard_baraniuk"
+              }
+            ]
+          },
+          "title": "The birth of the open-source learning revolution",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "global issues"
+              },
+              {
+                "name": "technology"
+              },
+              {
+                "name": "business"
+              },
+              {
+                "name": "software"
+              },
+              {
+                "name": "collaboration"
+              },
+              {
+                "name": "library"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 1159185
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/ross_lovegrove_organic_design_inspired_by_nature",
+          "description": "Designer Ross Lovegrove expounds his philosophy of \"fat-free\" design and offers insight into several of his extraordinary products, including the Ty Nant water bottle and the Go chair.",
+          "duration": 1156,
+          "id": "27",
+          "language": "en",
+          "presenterDisplayName": "Ross Lovegrove",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Industrial designer",
+                "id": "28",
+                "firstname": "Ross",
+                "lastname": "Lovegrove",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1410_254x191.jpg",
+                "slug": "ross_lovegrove"
+              }
+            ]
+          },
+          "title": "Organic design, inspired by nature",
+          "topics": {
+            "nodes": [
+              {
+                "name": "design"
+              },
+              {
+                "name": "industrial design"
+              },
+              {
+                "name": "invention"
+              },
+              {
+                "name": "DNA"
+              },
+              {
+                "name": "nature"
+              },
+              {
+                "name": "creativity"
+              },
+              {
+                "name": "biology"
+              },
+              {
+                "name": "product design"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 1335822
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/amy_smith_simple_designs_to_save_a_life",
+          "description": "Fumes from indoor cooking fires kill more than 2 million children a year in the developing world. MIT engineer Amy Smith details an exciting but simple solution: a tool for turning farm waste into clean-burning charcoal.",
+          "duration": 886,
+          "id": "2",
+          "language": "en",
+          "presenterDisplayName": "Amy Smith",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "inventor, engineer",
+                "id": "3",
+                "firstname": "Amy",
+                "lastname": "Smith",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1527_253x190.jpg",
+                "slug": "amy_smith"
+              }
+            ]
+          },
+          "title": "Simple designs to save a life",
+          "topics": {
+            "nodes": [
+              {
+                "name": "global issues"
+              },
+              {
+                "name": "design"
+              },
+              {
+                "name": "engineering"
+              },
+              {
+                "name": "industrial design"
+              },
+              {
+                "name": "invention"
+              },
+              {
+                "name": "renewable energy"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 1837315
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/jennifer_lin_improvising_on_piano_aged_14",
+          "description": "Pianist and composer Jennifer Lin gives a magical performance, talks about the process of creativity and improvises a moving solo piece based on a random sequence of notes.",
+          "duration": 1431,
+          "id": "46",
+          "language": "en",
+          "presenterDisplayName": "Jennifer Lin",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Pianist, composer",
+                "id": "46",
+                "firstname": "Jennifer",
+                "lastname": "Lin",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1413_254x191.jpg",
+                "slug": "jennifer_lin"
+              }
+            ]
+          },
+          "title": "Improvising on piano, aged 14",
+          "topics": {
+            "nodes": [
+              {
+                "name": "entertainment"
+              },
+              {
+                "name": "music"
+              },
+              {
+                "name": "performance"
+              },
+              {
+                "name": "creativity"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 1875767
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/sirena_huang_an_11_year_old_s_magical_violin",
+          "description": "Violinist Sirena Huang gives a technically brilliant and emotionally nuanced performance. In a charming interlude, the 11-year-old praises the timeless design of her instrument.",
+          "duration": 1467,
+          "id": "45",
+          "language": "en",
+          "presenterDisplayName": "Sirena Huang",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Violinist",
+                "id": "45",
+                "firstname": "Sirena",
+                "lastname": "Huang",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/7bddd300804000ead3db986c213938a6c7c70303_254x191.jpg",
+                "slug": "sirena_huang"
+              }
+            ]
+          },
+          "title": "An 11-year-old's magical violin",
+          "topics": {
+            "nodes": [
+              {
+                "name": "entertainment"
+              },
+              {
+                "name": "music"
+              },
+              {
+                "name": "performance"
+              },
+              {
+                "name": "youth"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 3391611
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/jeff_han_the_radical_promise_of_the_multi_touch_interface",
+          "description": "Jeff Han shows off a cheap, scalable multi-touch and pressure-sensitive computer screen interface that may spell the end of point-and-click.",
+          "duration": 514,
+          "id": "65",
+          "language": "en",
+          "presenterDisplayName": "Jeff Han",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Human-computer interface designer",
+                "id": "65",
+                "firstname": "Jeff",
+                "lastname": "Han",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1613_254x191.jpg",
+                "slug": "jeff_han"
+              }
+            ]
+          },
+          "title": "The radical promise of the multi-touch interface",
+          "topics": {
+            "nodes": [
+              {
+                "name": "technology"
+              },
+              {
+                "name": "design"
+              },
+              {
+                "name": "demo"
+              },
+              {
+                "name": "UX design"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 4852588
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/nicholas_negroponte_one_laptop_per_child",
+          "description": "Nicholas Negroponte, founder of the MIT Media Laboratory, describes how the One Laptop Per Child project will build and distribute the \"$100 laptop.\"",
+          "duration": 1043,
+          "id": "41",
+          "language": "en",
+          "presenterDisplayName": "Nicholas Negroponte",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Tech visionary",
+                "id": "38",
+                "firstname": "Nicholas",
+                "lastname": "Negroponte",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/7230935c0d873ed58b2786e1f3b5c93dc09e10cc_254x191.jpg",
+                "slug": "nicholas_negroponte"
+              }
+            ]
+          },
+          "title": "One Laptop per Child",
+          "topics": {
+            "nodes": [
+              {
+                "name": "global issues"
+              },
+              {
+                "name": "technology"
+              },
+              {
+                "name": "design"
+              },
+              {
+                "name": "entrepreneur"
+              },
+              {
+                "name": "education"
+              },
+              {
+                "name": "social change"
+              },
+              {
+                "name": "philanthropy"
+              },
+              {
+                "name": "kids"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 497483
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/larry_brilliant_my_wish_help_me_stop_pandemics",
+          "description": "Accepting the 2006 TED Prize, Dr. Larry Brilliant talks about how smallpox was eradicated from the planet, and calls for a new global system that can identify and contain pandemics before they spread.",
+          "duration": 1536,
+          "id": "58",
+          "language": "en",
+          "presenterDisplayName": "Larry Brilliant",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Epidemiologist, philanthropist",
+                "id": "58",
+                "firstname": "Larry",
+                "lastname": "Brilliant",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/3ac94c553a666884a672132af6eda1aa184b514b_254x191.jpg",
+                "slug": "larry_brilliant"
+              }
+            ]
+          },
+          "title": "My wish: Help me stop pandemics",
+          "topics": {
+            "nodes": [
+              {
+                "name": "global issues"
+              },
+              {
+                "name": "science"
+              },
+              {
+                "name": "technology"
+              },
+              {
+                "name": "collaboration"
+              },
+              {
+                "name": "disease"
+              },
+              {
+                "name": "health"
+              },
+              {
+                "name": "TED Prize"
+              },
+              {
+                "name": "ebola"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 1437317
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/jehane_noujaim_my_wish_a_global_day_of_film",
+          "description": "Jehane Noujaim unveils her 2006 TED Prize wish: to bring the world together for one day a year through the power of film.",
+          "duration": 1524,
+          "id": "55",
+          "language": "en",
+          "presenterDisplayName": "Jehane Noujaim",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Filmmaker",
+                "id": "55",
+                "firstname": "Jehane",
+                "lastname": "Noujaim",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1315_253x190.jpg",
+                "slug": "jehane_noujaim"
+              }
+            ]
+          },
+          "title": "My wish: A global day of film",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "global issues"
+              },
+              {
+                "name": "entertainment"
+              },
+              {
+                "name": "social change"
+              },
+              {
+                "name": "art"
+              },
+              {
+                "name": "storytelling"
+              },
+              {
+                "name": "film"
+              },
+              {
+                "name": "TED Prize"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 493092
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/cameron_sinclair_my_wish_a_call_for_open_source_architecture",
+          "description": "Accepting his 2006 TED Prize, Cameron Sinclair demonstrates how passionate designers and architects can respond to world housing crises. He unveils his TED Prize wish for a network to improve global living standards through collaborative design.",
+          "duration": 1394,
+          "id": "54",
+          "language": "en",
+          "presenterDisplayName": "Cameron Sinclair",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Co-founder, Architecture for Humanity",
+                "id": "54",
+                "firstname": "Cameron",
+                "lastname": "Sinclair",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1319_254x191.jpg",
+                "slug": "cameron_sinclair"
+              }
+            ]
+          },
+          "title": "My wish: A call for open-source architecture",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "global issues"
+              },
+              {
+                "name": "design"
+              },
+              {
+                "name": "invention"
+              },
+              {
+                "name": "software"
+              },
+              {
+                "name": "architecture"
+              },
+              {
+                "name": "collaboration"
+              },
+              {
+                "name": "activism"
+              },
+              {
+                "name": "philanthropy"
+              },
+              {
+                "name": "natural disaster"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 1373463
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/dan_dennett_let_s_teach_religion_all_religion_in_schools",
+          "description": "Philosopher Dan Dennett calls for religion -- all religion -- to be taught in schools, so we can understand its nature as a natural phenomenon. Then he takes on The Purpose-Driven Life, disputing its claim that, to be moral, one must deny evolution.",
+          "duration": 1471,
+          "id": "94",
+          "language": "en",
+          "presenterDisplayName": "Dan Dennett",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Philosopher, cognitive scientist",
+                "id": "92",
+                "firstname": "Dan",
+                "lastname": "Dennett",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/185dfcae13ba50e25923e1d2b6eadd199a122241_254x191.jpg",
+                "slug": "dan_dennett"
+              }
+            ]
+          },
+          "title": "Let's teach religion -- all religion -- in schools",
+          "topics": {
+            "nodes": [
+              {
+                "name": "cognitive science"
+              },
+              {
+                "name": "evolution"
+              },
+              {
+                "name": "philosophy"
+              },
+              {
+                "name": "religion"
+              },
+              {
+                "name": "brain"
+              },
+              {
+                "name": "atheism"
+              },
+              {
+                "name": "consciousness"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 4249114
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/rick_warren_a_life_of_purpose",
+          "description": "Pastor Rick Warren, author of \"The Purpose-Driven Life,\" reflects on his own crisis of purpose in the wake of his book's wild success. He explains his belief that God's intention is for each of us to use our talents and influence to do good.",
+          "duration": 1248,
+          "id": "71",
+          "language": "en",
+          "presenterDisplayName": "Rick Warren",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Pastor, author",
+                "id": "71",
+                "firstname": "Rick",
+                "lastname": "Warren",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1368_254x191.jpg",
+                "slug": "rick_warren"
+              }
+            ]
+          },
+          "title": "A life of purpose",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "religion"
+              },
+              {
+                "name": "philanthropy"
+              },
+              {
+                "name": "leadership"
+              },
+              {
+                "name": "happiness"
+              },
+              {
+                "name": "Christianity"
+              },
+              {
+                "name": "motivation"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 4318430
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/julia_sweeney_letting_go_of_god",
+          "description": "When two young Mormon missionaries knock on Julia Sweeney's door one day, it touches off a quest to completely rethink her own beliefs, in this excerpt from Sweeney's solo show \"Letting Go of God.\"  ",
+          "duration": 978,
+          "id": "86",
+          "language": "en",
+          "presenterDisplayName": "Julia Sweeney",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Actor, comedian",
+                "id": "85",
+                "firstname": "Julia",
+                "lastname": "Sweeney",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/778420177b38bc11af0255c85f28b06913c0969d_254x191.jpg",
+                "slug": "julia_sweeney"
+              }
+            ]
+          },
+          "title": "Letting go of God",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "performance"
+              },
+              {
+                "name": "storytelling"
+              },
+              {
+                "name": "religion"
+              },
+              {
+                "name": "Christianity"
+              },
+              {
+                "name": "atheism"
+              },
+              {
+                "name": "comedy"
+              },
+              {
+                "name": "humor"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 4845412
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/joshua_prince_ramus_behind_the_design_of_seattle_s_library",
+          "description": "Architect Joshua Prince-Ramus takes the audience on dazzling, dizzying virtual tours of three recent projects: the Central Library in Seattle, the Museum Plaza in Louisville and the Charles Wyly Theater in Dallas.",
+          "duration": 1184,
+          "id": "49",
+          "language": "en",
+          "presenterDisplayName": "Joshua Prince-Ramus",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Architect",
+                "id": "49",
+                "firstname": "Joshua",
+                "lastname": "Prince-Ramus",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1482_254x191.jpg",
+                "slug": "joshua_prince_ramus"
+              }
+            ]
+          },
+          "title": "Behind the design of Seattle's library",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "design"
+              },
+              {
+                "name": "architecture"
+              },
+              {
+                "name": "collaboration"
+              },
+              {
+                "name": "library"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 1264792
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen",
+          "description": "You've never seen data presented like this. With the drama and urgency of a sportscaster, statistics guru Hans Rosling debunks myths about the so-called \"developing world.\"",
+          "duration": 1176,
+          "id": "92",
+          "language": "en",
+          "presenterDisplayName": "Hans Rosling",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Global health expert; data visionary",
+                "id": "90",
+                "firstname": "Hans",
+                "lastname": "Rosling",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/2bd4d0cfff0c3a3306650768c2f988e154db7042_254x191.jpg",
+                "slug": "hans_rosling"
+              }
+            ]
+          },
+          "title": "The best stats you've ever seen",
+          "topics": {
+            "nodes": [
+              {
+                "name": "global issues"
+              },
+              {
+                "name": "economics"
+              },
+              {
+                "name": "health"
+              },
+              {
+                "name": "Africa"
+              },
+              {
+                "name": "statistics"
+              },
+              {
+                "name": "demo"
+              },
+              {
+                "name": "Asia"
+              },
+              {
+                "name": "visualizations"
+              },
+              {
+                "name": "math"
+              },
+              {
+                "name": "international development"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 15505563
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/sir_ken_robinson_do_schools_kill_creativity",
+          "description": "Sir Ken Robinson makes an entertaining and profoundly moving case for creating an education system that nurtures (rather than undermines) creativity.",
+          "duration": 1151,
+          "id": "66",
+          "language": "en",
+          "presenterDisplayName": "Sir Ken Robinson",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Author, educator",
+                "id": "69",
+                "firstname": "Sir Ken",
+                "lastname": "Robinson",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1465_254x191.jpg",
+                "slug": "sir_ken_robinson"
+              }
+            ]
+          },
+          "title": "Do schools kill creativity?",
+          "topics": {
+            "nodes": [
+              {
+                "name": "culture"
+              },
+              {
+                "name": "education"
+              },
+              {
+                "name": "creativity"
+              },
+              {
+                "name": "dance"
+              },
+              {
+                "name": "parenting"
+              },
+              {
+                "name": "teaching"
+              },
+              {
+                "name": "kids"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 74449368
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/majora_carter_greening_the_ghetto",
+          "description": "In an emotionally charged talk, MacArthur-winning activist Majora Carter details her fight for environmental justice in the South Bronx -- and shows how minority neighborhoods suffer most from flawed urban policy.",
+          "duration": 1096,
+          "id": "53",
+          "language": "en",
+          "presenterDisplayName": "Majora Carter",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Urban revitalizer",
+                "id": "51",
+                "firstname": "Majora",
+                "lastname": "Carter",
+                "photoUrl": "https://ted-conferences-speaker-photos-production.s3.amazonaws.com/11hzk1037eujuigkmrwd9oavuq7x",
+                "slug": "majora_carter"
+              }
+            ]
+          },
+          "title": "Greening the ghetto",
+          "topics": {
+            "nodes": [
+              {
+                "name": "environment"
+              },
+              {
+                "name": "politics"
+              },
+              {
+                "name": "sustainability"
+              },
+              {
+                "name": "business"
+              },
+              {
+                "name": "cities"
+              },
+              {
+                "name": "activism"
+              },
+              {
+                "name": "pollution"
+              },
+              {
+                "name": "equality"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 3030789
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/david_pogue_simplicity_sells",
+          "description": "New York Times columnist David Pogue takes aim at technology’s worst interface-design offenders, and provides encouraging examples of products that get it right. To funny things up, he bursts into song.",
+          "duration": 1266,
+          "id": "7",
+          "language": "en",
+          "presenterDisplayName": "David Pogue",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Technology columnist",
+                "id": "8",
+                "firstname": "David",
+                "lastname": "Pogue",
+                "photoUrl": "https://pe.tedcdn.com/images/ted/1437_253x190.jpg",
+                "slug": "david_pogue"
+              }
+            ]
+          },
+          "title": "Simplicity sells",
+          "topics": {
+            "nodes": [
+              {
+                "name": "technology"
+              },
+              {
+                "name": "computers"
+              },
+              {
+                "name": "entertainment"
+              },
+              {
+                "name": "media"
+              },
+              {
+                "name": "music"
+              },
+              {
+                "name": "performance"
+              },
+              {
+                "name": "software"
+              },
+              {
+                "name": "UX design"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 2015925
+        },
+        {
+          "audioInternalLanguageCode": "en",
+          "canonicalUrl": "https://www.ted.com/talks/al_gore_averting_the_climate_crisis",
+          "description": "With the same humor and humanity he exuded in \"An Inconvenient Truth,\" Al Gore spells out 15 ways that individuals can address climate change immediately, from buying a hybrid to inventing a new, hotter brand name for global warming.",
+          "duration": 957,
+          "id": "1",
+          "language": "en",
+          "presenterDisplayName": "Al Gore",
+          "speakers": {
+            "nodes": [
+              {
+                "description": "Climate advocate",
+                "id": "2",
+                "firstname": "Al",
+                "lastname": "Gore",
+                "photoUrl": "https://ted-conferences-speaker-photos-production.s3.amazonaws.com/6skn3rn4m7pk5xy4a31c6g4m75pw",
+                "slug": "al_gore"
+              }
+            ]
+          },
+          "title": "Averting the climate crisis",
+          "topics": {
+            "nodes": [
+              {
+                "name": "climate change"
+              },
+              {
+                "name": "culture"
+              },
+              {
+                "name": "environment"
+              },
+              {
+                "name": "global issues"
+              },
+              {
+                "name": "science"
+              },
+              {
+                "name": "sustainability"
+              },
+              {
+                "name": "technology"
+              },
+              {
+                "name": "transportation"
+              },
+              {
+                "name": "renewable energy"
+              }
+            ]
+          },
+          "type": {
+            "name": "TED Stage Talk"
+          },
+          "viewedCount": 3691030
+        }
+      ]
+    }
+  }
+}
