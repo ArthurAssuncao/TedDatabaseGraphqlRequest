@@ -1,4 +1,5 @@
 import { gql } from "graphql-request";
+import { Translation } from "./translation";
 
 export interface TedVideoQL {
   data?: Data;
@@ -57,6 +58,10 @@ export interface Type {
 export interface PageInfo {
   endCursor?: string;
   hasNextPage?: boolean;
+}
+
+export interface VideoWithTranslation extends VideosNode {
+  translation?: Translation;
 }
 
 const videosQuery = gql`

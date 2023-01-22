@@ -4,7 +4,15 @@ import path from "path";
 import { TedClient } from "./TedClient";
 
 describe("TedClint", () => {
-  const tedClient = new TedClient();
+  let tedClient: TedClient;
+
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
+  beforeEach(() => {
+    tedClient = new TedClient();
+  });
 
   const loadVideosDataFileFirst = () => {
     const filePath = path.resolve(__dirname, "./mocks/videos_page_first.json");
@@ -25,10 +33,6 @@ describe("TedClint", () => {
 
     return JSON.parse(jsonData);
   };
-
-  afterEach(() => {
-    jest.clearAllMocks();
-  });
 
   test("should return -1 when page number is zero", () => {
     const pageNumber = 0;
