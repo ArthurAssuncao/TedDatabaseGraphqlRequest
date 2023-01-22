@@ -9,3 +9,5 @@ const start = async () => {
 
   tedClient.saveDataToJson(videosData);
 };
+
+start();
