@@ -42,7 +42,7 @@ class TedClient {
 
   tedVideoQLtoVideoWithTranslation = (tedVideoQL: TedVideoQL) => {
     let videos: VideoWithTranslation[] = [];
-    tedVideoQL?.data?.videos?.nodes?.map((value) => {
+    tedVideoQL?.videos?.nodes?.map((value) => {
       videos.push(value);
     });
     return videos;
@@ -86,23 +86,23 @@ class TedClient {
     let counter = 0;
 
     while (hasNextPage) {
+      console.log("Page ", counter + 1);
       data = await this.getVideosDataAfterNumber(afterNumber);
+
       if (inMemory) {
-        data?.data?.videos?.nodes?.map((value) => {
+        data?.videos?.nodes?.map((value) => {
           videos.push(value);
         });
       } else {
         const dataBackup = this.getDataFromFile();
-        data?.data?.videos?.nodes?.map((value) => {
+        data?.videos?.nodes?.map((value) => {
           dataBackup.push(value);
         });
         this.saveDataToJson(dataBackup);
       }
-      hasNextPage = data?.data?.videos?.pageInfo?.hasNextPage || false;
+      hasNextPage = data?.videos?.pageInfo?.hasNextPage || false;
       if (hasNextPage) {
-        newAfterNumber = parseInt(
-          data?.data?.videos?.pageInfo?.endCursor || "-1"
-        );
+        newAfterNumber = parseInt(data?.videos?.pageInfo?.endCursor || "-1");
 
         pageNumber++; // consider next page
         if (afterNumber >= newAfterNumber) {
@@ -112,7 +112,7 @@ class TedClient {
       }
       counter++;
 
-      if (counter % 100) {
+      if (counter % 100 == 0) {
         delay(delaySeconds);
       }
     }
@@ -146,8 +146,8 @@ class TedClient {
         const translationData = await this.getTranslationById(
           parseInt(talkId || "-1")
         );
-        if (translationData?.data?.translation) {
-          videoWithTranslation.translation = translationData?.data?.translation;
+        if (translationData?.translation) {
+          videoWithTranslation.translation = translationData?.translation;
           this.saveDataToJson(dataBackup);
         }
       }

@@ -122,7 +122,7 @@ describe("TedClint", () => {
 
     const result = await tedClient.getVideosDataAfterNumber(0);
 
-    expect(result.data?.videos?.nodes?.length).toBeGreaterThanOrEqual(
+    expect(result.videos?.nodes?.length).toBeGreaterThanOrEqual(
       TedClient.VIDEOS_PER_PAGE
     );
 
@@ -137,7 +137,7 @@ describe("TedClint", () => {
 
     const result = await tedClient.getVideosDataAfterNumber(0);
 
-    expect(result.data?.videos?.nodes?.length).toBeGreaterThanOrEqual(
+    expect(result.videos?.nodes?.length).toBeGreaterThanOrEqual(
       TOTAL_VIDEOS_LAST_PAGE
     );
 

@@ -2,10 +2,6 @@ import { gql } from "graphql-request";
 import { Translation } from "./translation";
 
 export interface TedVideoQL {
-  data?: Data;
-}
-
-export interface Data {
   videos?: Videos;
 }
 
@@ -69,6 +65,7 @@ const videosQuery = gql`
     videos(isPublished: true, after: $initialValue) {
       pageInfo {
         endCursor
+        hasNextPage
       }
       nodes {
         audioInternalLanguageCode

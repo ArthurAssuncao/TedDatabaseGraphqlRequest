@@ -1,9 +1,6 @@
 import { gql } from "graphql-request";
-export interface TedTranslationQL {
-  data?: Data;
-}
 
-export interface Data {
+export interface TedTranslationQL {
   translation?: Translation;
 }
 

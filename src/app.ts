@@ -11,6 +11,7 @@ const start = async () => {
   const videosDataWithTranslation = tedClient.fillTranslationsOfVideos();
 
   // tedClient.saveDataToJson(videosDataWithTranslation);
+  console.log("Ted Client Finished...");
 };
 
 start();
