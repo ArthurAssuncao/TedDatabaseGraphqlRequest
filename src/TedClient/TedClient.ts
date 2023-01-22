@@ -11,20 +11,24 @@ function delay(time: number) {
 class TedClient {
   static readonly GRAPH_QL_URL: string = "https://graphql.ted.com/";
   static readonly FILE_OUTPUT: string = "ted_data.json";
+  static readonly FILE_OUTPUT_TRANSLATION: string =
+    "ted_data_with_translation.json";
   static readonly VIDEOS_PER_PAGE = 50;
 
   client: GraphQLClient;
 
-  constructor() {
+  constructor(continueFromLastExecution: boolean = false) {
     this.client = new GraphQLClient(TedClient.GRAPH_QL_URL);
-    try {
-      fs.unlinkSync(TedClient.FILE_OUTPUT);
-    } catch (_) {}
+    if (!continueFromLastExecution) {
+      try {
+        fs.unlinkSync(TedClient.FILE_OUTPUT);
+      } catch (_) {}
+    }
   }
 
-  saveDataToJson = (data: VideoWithTranslation[]) => {
+  saveDataToJson = (data: VideoWithTranslation[], file: string) => {
     const newData = JSON.stringify(data, null, 2);
-    fs.writeFileSync(TedClient.FILE_OUTPUT, newData);
+    fs.writeFileSync(file, newData);
   };
 
   getDataFromFile = (): VideoWithTranslation[] => {
@@ -98,7 +102,7 @@ class TedClient {
         data?.videos?.nodes?.map((value) => {
           dataBackup.push(value);
         });
-        this.saveDataToJson(dataBackup);
+        this.saveDataToJson(dataBackup, TedClient.FILE_OUTPUT);
       }
       hasNextPage = data?.videos?.pageInfo?.hasNextPage || false;
       if (hasNextPage) {
@@ -112,7 +116,7 @@ class TedClient {
       }
       counter++;
 
-      if (counter % 100 == 0) {
+      if (counter % 10 == 0) {
         delay(delaySeconds);
       }
     }
@@ -124,35 +128,47 @@ class TedClient {
 
   getTranslationById = async (talkId: number): Promise<TedTranslationQL> => {
     const variable = {
-      id: talkId.toString(),
+      talkId: talkId.toString(),
     };
     if (talkId <= 0) {
       return {} as TedTranslationQL;
     }
     try {
       const data = await this.client.request(tedQueries.translation, variable);
+      console.log(JSON.stringify(data));
       return data;
     } catch (err: any) {
+      console.log(err);
       return {} as TedTranslationQL;
     }
   };
 
-  fillTranslationsOfVideos = () => {
+  fillTranslationsOfVideos = (delaySeconds = 0) => {
     const dataBackup = this.getDataFromFile();
-    dataBackup.map(async (videoWithoutTranslation) => {
+
+    const total = dataBackup.length;
+    const newDataBackup: VideoWithTranslation[] = [];
+    dataBackup.map(async (videoWithoutTranslation, index) => {
+      console.log(`Translation ${index + 1} of ${total}`);
+      if (index % 100 == 0) {
+        delay(delaySeconds);
+      }
+
       if (videoWithoutTranslation?.translation == undefined) {
         const videoWithTranslation = videoWithoutTranslation;
         const talkId = videoWithTranslation.id;
         const translationData = await this.getTranslationById(
           parseInt(talkId || "-1")
         );
-        if (translationData?.translation) {
+        console.log(translationData?.translation);
+        if (translationData?.translation != undefined) {
           videoWithTranslation.translation = translationData?.translation;
-          this.saveDataToJson(dataBackup);
+          newDataBackup.push(videoWithTranslation);
+          this.saveDataToJson(newDataBackup, TedClient.FILE_OUTPUT_TRANSLATION);
         }
       }
     });
-    return dataBackup;
+    return newDataBackup;
   };
 }
 

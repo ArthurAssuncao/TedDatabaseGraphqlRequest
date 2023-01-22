@@ -18,9 +18,8 @@ export interface Cue {
 }
 
 const translationQuery = gql`
-  {
-    query
-    translation(videoId: $id, language: "en") {
+  query getTranslation($talkId: ID!) {
+    translation(videoId: $talkId, language: "en") {
       paragraphs {
         cues {
           text
