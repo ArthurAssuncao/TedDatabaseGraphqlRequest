@@ -5,9 +5,12 @@ const start = async () => {
 
   const tedClient: TedClient = new TedClient();
 
-  const videosData = await tedClient.getAllVideosData();
+  // each 100 requisitions the app is delayed in 5 minutes
+  const videosData = await tedClient.getAllVideosData(false, 5 * 60);
 
-  tedClient.saveDataToJson(videosData);
+  const videosDataWithTranslation = tedClient.fillTranslationsOfVideos();
+
+  // tedClient.saveDataToJson(videosDataWithTranslation);
 };
 
 start();

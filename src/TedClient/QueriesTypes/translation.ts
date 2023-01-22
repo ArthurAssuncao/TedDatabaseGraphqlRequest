@@ -1,5 +1,5 @@
 import { gql } from "graphql-request";
-export interface TedVideoQL {
+export interface TedTranslationQL {
   data?: Data;
 }
 

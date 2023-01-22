@@ -34,6 +34,45 @@ describe("TedClint", () => {
     return JSON.parse(jsonData);
   };
 
+  const loadTranslationDataFile = (talkId: number) => {
+    const filePath = path.resolve(
+      __dirname,
+      `./mocks/translation_${talkId}.json`
+    );
+    const jsonData = fs.readFileSync(filePath, {
+      encoding: "utf8",
+      flag: "r",
+    });
+
+    return JSON.parse(jsonData);
+  };
+
+  const loadVideosCompleteFirstPageDataFile = () => {
+    const filePath = path.resolve(
+      __dirname,
+      `./mocks/videos_first_page_with_translations.json`
+    );
+    const jsonData = fs.readFileSync(filePath, {
+      encoding: "utf8",
+      flag: "r",
+    });
+
+    return JSON.parse(jsonData);
+  };
+
+  const loadVideosWithTranslationFirstDataFile = () => {
+    const filePath = path.resolve(
+      __dirname,
+      `./mocks/videos_first_page_in_type_videos_with_translation.json`
+    );
+    const jsonData = fs.readFileSync(filePath, {
+      encoding: "utf8",
+      flag: "r",
+    });
+
+    return JSON.parse(jsonData);
+  };
+
   test("should return -1 when page number is zero", () => {
     const pageNumber = 0;
     const firstIndex = tedClient.getFirstIndexInPagination(pageNumber);
@@ -143,5 +182,61 @@ describe("TedClint", () => {
     const result = await tedClient.getAllVideosData();
 
     expect(result.length).toBe(TOTAL_VIDEOS_CURRENTLY);
+  });
+
+  test("should return empty object on error", async () => {
+    jest.spyOn(GraphQLClient.prototype, "request").mockRejectedValue({});
+    const validId = 99754;
+
+    const result = await tedClient.getTranslationById(validId);
+
+    expect(result).toStrictEqual({});
+  });
+
+  test("should return empty object when id is invalid", async () => {
+    const invalidId = -1;
+    const validId = 99754;
+    const jsonData = loadTranslationDataFile(validId);
+
+    jest.spyOn(GraphQLClient.prototype, "request").mockResolvedValue(jsonData);
+
+    const result = await tedClient.getTranslationById(invalidId);
+
+    expect(result).toStrictEqual({});
+  });
+
+  test("should return complete translation of video when id is valid", async () => {
+    const validId = 99754;
+    const jsonData = loadTranslationDataFile(validId);
+
+    jest.spyOn(GraphQLClient.prototype, "request").mockResolvedValue(jsonData);
+
+    const result = await tedClient.getTranslationById(validId);
+
+    expect(result).toStrictEqual(jsonData);
+  });
+
+  test("should return videoWithTranslation", () => {
+    const videosData = loadVideosDataFileFirst();
+    const videosWithTranslationData = loadVideosWithTranslationFirstDataFile();
+    const videos = tedClient.tedVideoQLtoVideoWithTranslation(videosData);
+
+    expect(videos).toStrictEqual(videosWithTranslationData);
+  });
+
+  test("should return complete video data including translation", () => {
+    const validId = 99754;
+    tedClient.getDataFromFile = jest.fn().mockImplementation(() => {
+      return loadVideosWithTranslationFirstDataFile();
+    });
+
+    tedClient.getTranslationById = jest.fn().mockImplementation(() => {
+      return loadTranslationDataFile(validId);
+    });
+
+    const result = tedClient.fillTranslationsOfVideos();
+    const resultCorrect = loadVideosCompleteFirstPageDataFile();
+
+    expect(result).toStrictEqual(resultCorrect);
   });
 });

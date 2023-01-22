@@ -1,7 +1,12 @@
 import fs from "fs";
 import { GraphQLClient } from "graphql-request";
 import { tedQueries } from "./QueriesTypes";
+import { TedTranslationQL } from "./QueriesTypes/translation";
 import { TedVideoQL, VideoWithTranslation } from "./QueriesTypes/videos";
+
+function delay(time: number) {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}
 
 class TedClient {
   static readonly GRAPH_QL_URL: string = "https://graphql.ted.com/";
@@ -12,8 +17,36 @@ class TedClient {
 
   constructor() {
     this.client = new GraphQLClient(TedClient.GRAPH_QL_URL);
-    fs.unlinkSync(TedClient.FILE_OUTPUT);
+    try {
+      fs.unlinkSync(TedClient.FILE_OUTPUT);
+    } catch (_) {}
   }
+
+  saveDataToJson = (data: VideoWithTranslation[]) => {
+    const newData = JSON.stringify(data, null, 2);
+    fs.writeFileSync(TedClient.FILE_OUTPUT, newData);
+  };
+
+  getDataFromFile = (): VideoWithTranslation[] => {
+    try {
+      const data = fs.readFileSync(TedClient.FILE_OUTPUT, {
+        encoding: "utf8",
+        flag: "r",
+      });
+      const json: VideoWithTranslation[] = JSON.parse(data);
+      return json;
+    } catch {
+      return [];
+    }
+  };
+
+  tedVideoQLtoVideoWithTranslation = (tedVideoQL: TedVideoQL) => {
+    let videos: VideoWithTranslation[] = [];
+    tedVideoQL?.data?.videos?.nodes?.map((value) => {
+      videos.push(value);
+    });
+    return videos;
+  };
 
   getFirstIndexInPagination = (pageNumber: number) => {
     if (pageNumber < 1) {
@@ -40,26 +73,9 @@ class TedClient {
     }
   };
 
-  saveDataToJson = (data: VideoWithTranslation[]) => {
-    const newData = JSON.stringify(data, null, 2);
-    fs.writeFileSync(TedClient.FILE_OUTPUT, newData);
-  };
-
-  getDataFromFile = (): VideoWithTranslation[] => {
-    try {
-      const data = fs.readFileSync(TedClient.FILE_OUTPUT, {
-        encoding: "utf8",
-        flag: "r",
-      });
-      const json: VideoWithTranslation[] = JSON.parse(data);
-      return json;
-    } catch {
-      return [];
-    }
-  };
-
   getAllVideosData = async (
-    inMemory: boolean = false
+    inMemory: boolean = false,
+    delaySeconds: number = 0
   ): Promise<VideoWithTranslation[]> => {
     let hasNextPage = true;
     let data;
@@ -67,6 +83,7 @@ class TedClient {
     let afterNumber = 0;
     let newAfterNumber = 0;
     let pageNumber = 1;
+    let counter = 0;
 
     while (hasNextPage) {
       data = await this.getVideosDataAfterNumber(afterNumber);
@@ -93,11 +110,49 @@ class TedClient {
         }
         afterNumber = newAfterNumber;
       }
+      counter++;
+
+      if (counter % 100) {
+        delay(delaySeconds);
+      }
     }
     if (inMemory) {
       return videos;
     }
     return this.getDataFromFile();
+  };
+
+  getTranslationById = async (talkId: number): Promise<TedTranslationQL> => {
+    const variable = {
+      id: talkId.toString(),
+    };
+    if (talkId <= 0) {
+      return {} as TedTranslationQL;
+    }
+    try {
+      const data = await this.client.request(tedQueries.translation, variable);
+      return data;
+    } catch (err: any) {
+      return {} as TedTranslationQL;
+    }
+  };
+
+  fillTranslationsOfVideos = () => {
+    const dataBackup = this.getDataFromFile();
+    dataBackup.map(async (videoWithoutTranslation) => {
+      if (videoWithoutTranslation?.translation == undefined) {
+        const videoWithTranslation = videoWithoutTranslation;
+        const talkId = videoWithTranslation.id;
+        const translationData = await this.getTranslationById(
+          parseInt(talkId || "-1")
+        );
+        if (translationData?.data?.translation) {
+          videoWithTranslation.translation = translationData?.data?.translation;
+          this.saveDataToJson(dataBackup);
+        }
+      }
+    });
+    return dataBackup;
   };
 }
 
