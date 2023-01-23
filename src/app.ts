@@ -9,7 +9,7 @@ const start = async () => {
   const delaySeconds = 5 * 60 * 1000;
 
   // each 10 requisitions the app is delayed in 5 minutes
-  // await tedClient.getAllVideosData(false, delaySeconds);
+  await tedClient.getAllVideosData(false, delaySeconds);
 
   // each 100 requisitions the app is delayed in 5 minutes
   await tedClient.fillTranslationsOfVideos(delaySeconds);
