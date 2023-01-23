@@ -60,7 +60,7 @@ describe("TedClint", () => {
     return JSON.parse(jsonData);
   };
 
-  const loadVideosWithTranslationFirstDataFile = () => {
+  const loadVideosWithFieldTranslationFirstDataFile = () => {
     const filePath = path.resolve(
       __dirname,
       `./mocks/videos_first_page_in_type_videos_with_translation.json`
@@ -218,23 +218,24 @@ describe("TedClint", () => {
 
   test("should return videoWithTranslation", () => {
     const videosData = loadVideosDataFileFirst();
-    const videosWithTranslationData = loadVideosWithTranslationFirstDataFile();
+    const videosWithTranslationData =
+      loadVideosWithFieldTranslationFirstDataFile();
     const videos = tedClient.tedVideoQLtoVideoWithTranslation(videosData);
 
     expect(videos).toStrictEqual(videosWithTranslationData);
   });
 
-  test("should return complete video data including translation", () => {
+  test("should return complete video data including translation", async () => {
     const validId = 99754;
     tedClient.getDataFromFile = jest.fn().mockImplementation(() => {
-      return loadVideosWithTranslationFirstDataFile();
+      return loadVideosWithFieldTranslationFirstDataFile();
     });
 
     tedClient.getTranslationById = jest.fn().mockImplementation(() => {
       return loadTranslationDataFile(validId);
     });
 
-    const result = tedClient.fillTranslationsOfVideos();
+    const result = await tedClient.fillTranslationsOfVideos();
     const resultCorrect = loadVideosCompleteFirstPageDataFile();
 
     expect(result).toStrictEqual(resultCorrect);

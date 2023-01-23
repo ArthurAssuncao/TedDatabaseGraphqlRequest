@@ -4,9 +4,11 @@ import { tedQueries } from "./QueriesTypes";
 import { TedTranslationQL } from "./QueriesTypes/translation";
 import { TedVideoQL, VideoWithTranslation } from "./QueriesTypes/videos";
 
-function delay(time: number) {
-  return new Promise((resolve) => setTimeout(resolve, time));
-}
+import { execSync } from "child_process";
+
+export const delay = (time: number) => {
+  execSync(`sleep ${time}`);
+};
 
 class TedClient {
   static readonly GRAPH_QL_URL: string = "https://graphql.ted.com/";
@@ -88,6 +90,7 @@ class TedClient {
     let newAfterNumber = 0;
     let pageNumber = 1;
     let counter = 0;
+    const numberRequisitionToDelay = 10;
 
     while (hasNextPage) {
       console.log("Page ", counter + 1);
@@ -116,7 +119,7 @@ class TedClient {
       }
       counter++;
 
-      if (counter % 10 == 0) {
+      if (delaySeconds > 0 && counter % numberRequisitionToDelay == 0) {
         delay(delaySeconds);
       }
     }
@@ -135,39 +138,44 @@ class TedClient {
     }
     try {
       const data = await this.client.request(tedQueries.translation, variable);
-      console.log(JSON.stringify(data));
       return data;
     } catch (err: any) {
-      console.log(err);
       return {} as TedTranslationQL;
     }
   };
 
-  fillTranslationsOfVideos = (delaySeconds = 0) => {
+  fillTranslationsOfVideos = async (delaySeconds = 0) => {
     const dataBackup = this.getDataFromFile();
-
+    const numberRequisitionToDelay = 10;
+    let counter = 0;
     const total = dataBackup.length;
     const newDataBackup: VideoWithTranslation[] = [];
-    dataBackup.map(async (videoWithoutTranslation, index) => {
-      console.log(`Translation ${index + 1} of ${total}`);
-      if (index % 100 == 0) {
+    for (let videoWithoutTranslation of dataBackup) {
+      console.log(`Translation ${counter + 1} of ${total}`);
+      if (
+        delaySeconds > 0 &&
+        counter > 0 &&
+        counter % numberRequisitionToDelay == 0
+      ) {
         delay(delaySeconds);
       }
 
+      const videoWithTranslation = videoWithoutTranslation;
       if (videoWithoutTranslation?.translation == undefined) {
-        const videoWithTranslation = videoWithoutTranslation;
         const talkId = videoWithTranslation.id;
         const translationData = await this.getTranslationById(
           parseInt(talkId || "-1")
         );
-        console.log(translationData?.translation);
+
         if (translationData?.translation != undefined) {
           videoWithTranslation.translation = translationData?.translation;
-          newDataBackup.push(videoWithTranslation);
-          this.saveDataToJson(newDataBackup, TedClient.FILE_OUTPUT_TRANSLATION);
         }
       }
-    });
+
+      newDataBackup.push(videoWithTranslation);
+      this.saveDataToJson(newDataBackup, TedClient.FILE_OUTPUT_TRANSLATION);
+      counter++;
+    }
     return newDataBackup;
   };
 }
