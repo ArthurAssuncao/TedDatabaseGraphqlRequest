@@ -1,13 +1,15 @@
 import fs from "fs";
 import { GraphQLClient } from "graphql-request";
+import { setTimeout } from "timers/promises";
 import { tedQueries } from "./QueriesTypes";
 import { TedTranslationQL } from "./QueriesTypes/translation";
 import { TedVideoQL, VideoWithTranslation } from "./QueriesTypes/videos";
 
-import { execSync } from "child_process";
+import isEqual from "lodash/isEqual";
+import uniqWith from "lodash/unionWith";
 
-export const delay = (time: number) => {
-  execSync(`sleep ${time}`);
+export const delay = async (time: number) => {
+  await setTimeout(time);
 };
 
 class TedClient {
@@ -120,7 +122,7 @@ class TedClient {
       counter++;
 
       if (delaySeconds > 0 && counter % numberRequisitionToDelay == 0) {
-        delay(delaySeconds);
+        await delay(delaySeconds);
       }
     }
     if (inMemory) {
@@ -157,7 +159,7 @@ class TedClient {
         counter > 0 &&
         counter % numberRequisitionToDelay == 0
       ) {
-        delay(delaySeconds);
+        await delay(delaySeconds);
       }
 
       const videoWithTranslation = videoWithoutTranslation;
@@ -177,6 +179,11 @@ class TedClient {
       counter++;
     }
     return newDataBackup;
+  };
+
+  removeDuplicates = (data: VideoWithTranslation[]): VideoWithTranslation[] => {
+    let newData: VideoWithTranslation[] = uniqWith(data, isEqual);
+    return newData;
   };
 }
 
