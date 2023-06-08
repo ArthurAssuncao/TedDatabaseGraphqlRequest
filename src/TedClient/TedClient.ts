@@ -20,8 +20,18 @@ class TedClient {
   static readonly VIDEOS_PER_PAGE = 50;
 
   client: GraphQLClient;
+  afterNumber: number;
+  pageNumber: number;
 
-  constructor(continueFromLastExecution: boolean = false) {
+  constructor(
+    continueFromLastExecution: boolean = false,
+    initialAfter: number = 0
+  ) {
+    this.afterNumber = initialAfter;
+    this.pageNumber = 1;
+    if (initialAfter > 0) {
+      this.pageNumber = initialAfter / 50 + 1;
+    }
     this.client = new GraphQLClient(TedClient.GRAPH_QL_URL);
     if (!continueFromLastExecution) {
       try {
@@ -88,15 +98,13 @@ class TedClient {
     let hasNextPage = true;
     let data;
     let videos: VideoWithTranslation[] = [];
-    let afterNumber = 0;
     let newAfterNumber = 0;
-    let pageNumber = 1;
     let counter = 0;
     const numberRequisitionToDelay = 10;
 
     while (hasNextPage) {
-      console.log("Page ", counter + 1);
-      data = await this.getVideosDataAfterNumber(afterNumber);
+      console.log("Page ", this.pageNumber, "After: ", this.afterNumber);
+      data = await this.getVideosDataAfterNumber(this.afterNumber);
 
       if (inMemory) {
         data?.videos?.nodes?.map((value) => {
@@ -113,11 +121,11 @@ class TedClient {
       if (hasNextPage) {
         newAfterNumber = parseInt(data?.videos?.pageInfo?.endCursor || "-1");
 
-        pageNumber++; // consider next page
-        if (afterNumber >= newAfterNumber) {
-          newAfterNumber = this.getFirstIndexInPagination(pageNumber);
+        this.pageNumber++; // consider next page
+        if (this.afterNumber >= newAfterNumber) {
+          newAfterNumber = this.getFirstIndexInPagination(this.pageNumber);
         }
-        afterNumber = newAfterNumber;
+        this.afterNumber = newAfterNumber;
       }
       counter++;
 

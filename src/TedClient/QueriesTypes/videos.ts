@@ -11,14 +11,19 @@ export interface Videos {
 }
 
 export interface VideosNode {
+  primaryImageSet?: PrimaryImageSet[];
+  videoDownloads?: VideoDownloads;
   audioInternalLanguageCode?: string;
   canonicalUrl?: string;
   description?: string;
   duration?: number;
   id?: string;
-  primaryImageSet?: PrimaryImageSet[];
   language?: string;
   presenterDisplayName?: string;
+  publishedAt?: Date;
+  recordedOn?: Date;
+  hasTranslations?: boolean;
+  nativeDownloads?: NativeDownloads;
   speakers?: Speakers;
   title?: string;
   topics?: Topics;
@@ -26,8 +31,15 @@ export interface VideosNode {
   viewedCount?: number;
 }
 
+export interface NativeDownloads {
+  low?: string;
+  medium?: string;
+  high?: string;
+}
+
 export interface PrimaryImageSet {
   url?: string;
+  aspectRatioName?: string;
 }
 
 export interface Speakers {
@@ -51,6 +63,14 @@ export interface Type {
   name?: string;
 }
 
+export interface VideoDownloads {
+  nodes?: VideoDownloadsNode[];
+}
+
+export interface VideoDownloadsNode {
+  url?: string;
+}
+
 export interface PageInfo {
   endCursor?: string;
   hasNextPage?: boolean;
@@ -68,6 +88,15 @@ const videosQuery = gql`
         hasNextPage
       }
       nodes {
+        primaryImageSet {
+          url
+          aspectRatioName
+        }
+        videoDownloads {
+          nodes {
+            url
+          }
+        }
         audioInternalLanguageCode
         canonicalUrl
         description
@@ -75,6 +104,14 @@ const videosQuery = gql`
         id
         language
         presenterDisplayName
+        publishedAt
+        recordedOn
+        hasTranslations
+        nativeDownloads {
+          low
+          medium
+          high
+        }
         speakers {
           nodes {
             description
