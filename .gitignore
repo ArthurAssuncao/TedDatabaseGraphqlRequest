@@ -131,6 +131,7 @@ dist
 
 data.json
 ted_data.json
+ted_data_hash.json
 ted_data_with_translation.json
 
 database-local

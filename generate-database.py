@@ -4,7 +4,7 @@ import os
 
 import sys
 
-db_name = 'davi-database.db'
+db_name = 'davi-database-prepopulated.db'
 db_name_translations = 'davi-database-with-translations.db'
 
 directory = sys.argv[1]
@@ -38,24 +38,24 @@ def connect_db(with_translations=False):
 def create_table_talks(cursor):
     create_query = '''CREATE TABLE IF NOT EXISTS talks(
         id INTEGER PRIMARY KEY,
-        audioInternalLanguageCode TEXT NOT NULL,
-        canonicalUrl TEXT NOT NULL,
+        audio_internal_language_code TEXT NOT NULL,
+        canonical_url TEXT NOT NULL,
         description TEXT NOT NULL,
         duration INTEGER NOT NULL,
         language TEXT NOT NULL,
-        presenterDisplayName TEXT NOT NULL,
-        image16x9 TEXT NOT NULL,
-        image4x3 TEXT NOT NULL,
-        image2x1 TEXT NOT NULL,
-        publishedAt DATE NOT NULL,
-        hasTranslations BOOLEAN NOT NULL,
+        presenter_display_name TEXT NOT NULL,
+        image_16x9 TEXT NOT NULL,
+        image_4x3 TEXT NOT NULL,
+        image_2x1 TEXT NOT NULL,
+        published_at DATE NOT NULL,
+        has_translations BOOLEAN NOT NULL,
         title TEXT NOT NULL,
         type TEXT NOT NULL,
-        viewedCount INTEGER NOT NULL,
+        viewed_count INTEGER NOT NULL,
         topics TEXT NOT NULL,
-        urlLowQuality TEXT NOT NULL,
-        urlMidQuality TEXT NOT NULL,
-        urlHighQuality TEXT NOT NULL
+        url_low_quality TEXT NOT NULL,
+        url_mid_quality TEXT NOT NULL,
+        url_high_quality TEXT NOT NULL
     );
     '''
     cursor.execute(create_query)
@@ -66,8 +66,8 @@ def create_table_speakers(cursor):
     create_query = '''CREATE TABLE IF NOT EXISTS speakers(
         id INTEGER PRIMARY KEY,
         description TEXT NOT NULL,
-        nameComplete TEXT NOT NULL,
-        photoUrl TEXT NOT NULL,
+        name_complete TEXT NOT NULL,
+        photo_url TEXT NOT NULL,
         slug TEXT NOT NULL
     );
     '''
@@ -77,10 +77,10 @@ def create_table_speakers(cursor):
 
 def create_table_talk_speakers(cursor):
     create_query = '''CREATE TABLE IF NOT EXISTS talk_speakers(
-        idTalk INTEGER,
-        idSpeaker INTEGER,
-        FOREIGN KEY (idTalk) REFERENCES talks(id)
-        FOREIGN KEY (idSpeaker) REFERENCES speaker(id)
+        talk_id INTEGER,
+        speaker_id INTEGER,
+        FOREIGN KEY (talk_id) REFERENCES talks(id)
+        FOREIGN KEY (speaker_id) REFERENCES speaker(id)
     );
     '''
     cursor.execute(create_query)
@@ -89,11 +89,11 @@ def create_table_talk_speakers(cursor):
 
 def create_table_translations(cursor):
     create_query = '''CREATE TABLE IF NOT EXISTS translations(
-        idTalk INTEGER,
+        talk_id INTEGER,
         time INTEGER NOT NULL,
         text TEXT NOT NULL,
-        FOREIGN KEY (idTalk) REFERENCES talks(id)
-        PRIMARY KEY (idTalk, time)
+        FOREIGN KEY (talk_id) REFERENCES talks(id)
+        PRIMARY KEY (talk_id, time)
     );
     '''
     cursor.execute(create_query)
@@ -113,10 +113,10 @@ def create_table_topics(cursor):
 def insert_into_table_talks(cursor, talk_unfixed):
     talk = fix_talk(talk_unfixed)
     create_query = '''INSERT INTO talks(\
-        id, audioInternalLanguageCode, canonicalUrl, description, duration, \
-        language, presenterDisplayName, title, type, viewedCount, topics,\
-        urlLowQuality, urlMidQuality, urlHighQuality, publishedAt, hasTranslations, \
-        image16x9, image4x3, image2x1)
+        id, audio_internal_language_code, canonical_url, description, duration, \
+        language, presenter_display_name, title, type, viewed_count, topics,\
+        url_low_quality, url_mid_quality, url_high_quality, published_at, has_translations, \
+        image_16x9, image_4x3, image_2x1)
         VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
     '''
     data = [talk['id'], talk['audioInternalLanguageCode'],
@@ -133,10 +133,10 @@ def insert_into_table_talks(cursor, talk_unfixed):
 def insert_into_table_speakers(cursor, speaker_unfixed):
     speaker = fix_speaker(speaker_unfixed)
     create_query = '''INSERT OR REPLACE INTO speakers(
-        id, description, nameComplete, photoUrl, slug)
+        id, description, name_complete, photo_url, slug)
         VALUES(?,?,?,?,?)
     '''
-    data = [speaker['id'], speaker['description'], speaker['name_complete'], speaker['photoUrl'], speaker['slug']]
+    data = [speaker['id'], speaker['description'], speaker['nameComplete'], speaker['photoUrl'], speaker['slug']]
     # print(create_query, data)
     cursor.execute(create_query, data)
     print(f"{speaker['id']} speaker inserted")
@@ -144,7 +144,7 @@ def insert_into_table_speakers(cursor, speaker_unfixed):
 
 def insert_into_table_talk_speakers(cursor, talk_id, speaker_id):
     create_query = '''INSERT INTO talk_speakers(
-        idTalk, idSpeaker)
+        talk_id, speaker_id)
         VALUES(?,?)
     '''
     data = [talk_id, speaker_id]
@@ -155,7 +155,7 @@ def insert_into_table_talk_speakers(cursor, talk_id, speaker_id):
 
 def insert_into_table_translations(cursor, talk_id, translation_paragraph):
     create_query = '''INSERT OR REPLACE INTO translations(
-        idTalk, time, text)
+        talk_id, time, text)
         VALUES(?,?,?)
     '''
 
@@ -230,7 +230,7 @@ def fix_speaker(speaker):
     fixed_speaker['id'] = int(fixed_speaker['id'])
     firstname = fixed_speaker['firstname']
     lastname = fixed_speaker['lastname']
-    fixed_speaker['name_complete'] = f"{firstname} {lastname}"
+    fixed_speaker['nameComplete'] = f"{firstname} {lastname}"
 
     return fixed_speaker
 
