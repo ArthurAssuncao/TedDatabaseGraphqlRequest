@@ -85,7 +85,7 @@ class TedClient {
     }
     try {
       const data = await this.client.request(tedQueries.videos, variable);
-      return data;
+      return data as TedVideoQL;
     } catch (err: any) {
       return {} as TedVideoQL;
     }
@@ -148,7 +148,7 @@ class TedClient {
     }
     try {
       const data = await this.client.request(tedQueries.translation, variable);
-      return data;
+      return data as TedTranslationQL;
     } catch (err: any) {
       return {} as TedTranslationQL;
     }
